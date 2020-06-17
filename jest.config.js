@@ -1,5 +1,5 @@
-module.export = {
-  setupFileAfterEnv: [
-    '.jest.setup',
+module.exports = {
+  setupFilesAfterEnv: [
+    './jest.setup',
   ],
 };
