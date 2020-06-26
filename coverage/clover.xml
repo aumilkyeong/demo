@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1593156016512" clover="3.2.0">
+  <project timestamp="1593156016512" name="All files">
+    <metrics statements="15" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="7" elements="28" coveredelements="20" complexity="0" loc="15" ncloc="15" packages="1" files="5" classes="5"/>
+    <file name="App.jsx" path="/Users/aumik/work/demo/src/App.jsx">
+      <metrics statements="7" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+    </file>
+    <file name="Input.jsx" path="/Users/aumik/work/demo/src/Input.jsx">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="4" count="3" type="stmt"/>
+    </file>
+    <file name="Item.jsx" path="/Users/aumik/work/demo/src/Item.jsx">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="4" count="9" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+    </file>
+    <file name="List.jsx" path="/Users/aumik/work/demo/src/List.jsx">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <line num="5" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="13" count="8" type="stmt"/>
+    </file>
+    <file name="Page.jsx" path="/Users/aumik/work/demo/src/Page.jsx">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="9" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>
