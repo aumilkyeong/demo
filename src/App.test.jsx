@@ -14,12 +14,18 @@ test('App', () => {
   const dispatch = jest.fn();
   useDispatch.mockImplementation(() => dispatch);
   useSelector.mockImplementation((selector) => selector({
-    restaurants,
+    restaurants: [],
+    restaurant: {},
   }));
 
-  const { getByText } = render(
+  const { queryByText } = render(
     <App />,
   );
-  expect(dispatch).toBeCalledWith({ type: 'setRestaurants', payload: { restaurants } });
-  expect(getByText(/김밥제국/)).not.toBeNull();
+  expect(dispatch).toBeCalledWith(
+    {
+      type: 'setRestaurants',
+      payload: { restaurants: [] },
+    },
+  );
+  expect(queryByText(/김밥제국/)).toBeNull();
 });
