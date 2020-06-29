@@ -1,24 +1,13 @@
-// action creator
-export function updateTaskTitle(taskTitle) {
+export function setRestaurants(restaurants) {
   return {
-    type: 'updateTaskTitle',
+    type: 'setRestaurants',
     payload: {
-      taskTitle,
+      restaurants,
     },
   };
 }
 
-export function addTask() {
-  return ({
-    type: 'addTask',
-  });
-}
-
-export function deleteTask(id) {
-  return {
-    type: 'deleteTask',
-    payload: {
-      id,
-    },
-  };
+// TODO: delete this.
+export function xxx() {
+  //
 }
