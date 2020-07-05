@@ -5,6 +5,7 @@ import {
 const initialState = {
   regions: [],
   categories: [],
+  restaurants: [],
 };
 
 const reducers = {
@@ -18,6 +19,12 @@ const reducers = {
     return {
       ...state,
       categories,
+    };
+  },
+  setRestaurants(state, { payload: { restaurants } }) {
+    return {
+      ...state,
+      restaurants,
     };
   },
   selectRegion(state, { payload: { regionId } }) {

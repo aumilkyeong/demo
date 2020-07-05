@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import {
   selectCategory,
+  loadRestaurants,
 } from './actions';
 
 import {
@@ -17,6 +18,7 @@ export default function CategoriesContainer() {
 
   function handleClick(categoryId) {
     dispatch(selectCategory(categoryId));
+    dispatch(loadRestaurants());
   }
   return (
     <ul>
