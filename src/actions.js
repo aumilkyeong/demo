@@ -26,6 +26,9 @@ export function loadInitialData() {
   };
 }
 
-export function xxx() {
-  // TODO: delete this; temporal function to avoid lint error
+export function selectRegion(regionId) {
+  return {
+    type: 'selectRegion',
+    payload: { regionId },
+  };
 }
