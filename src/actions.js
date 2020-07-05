@@ -1,50 +1,31 @@
-import { fetchCategories } from './services/api';
+import {
+  fetchRegions,
+  fetchCategories,
+} from './services/api';
+
+export function setRegions(regions) {
+  return {
+    type: 'setRegions',
+    payload: { regions },
+  };
+}
 
 export function setCategories(categories) {
   return {
     type: 'setCategories',
-    payload: {
-      categories,
-    },
+    payload: { categories },
   };
 }
 
-export function setRestaurants(restaurants) {
-  return {
-    type: 'setRestaurants',
-    payload: {
-      restaurants,
-    },
-  };
-}
-
-export function changeRestaurantField({ name, value }) {
-  return {
-    type: 'changeRestaurantField',
-    payload: {
-      name,
-      value,
-    },
-  };
-}
-
-export function addRestaurant() {
-  return {
-    type: 'addRestaurant',
-  };
-}
-
-export function loadCategories() {
+export function loadInitialData() {
   return async (dispatch) => {
+    const regions = await fetchRegions();
     const categories = await fetchCategories();
+    dispatch(setRegions(regions));
     dispatch(setCategories(categories));
   };
 }
 
-export function loadRestaurants() {
-  return async (dispatch) => {
-    // TODO: fetch...
-    const restaurants = [];
-    dispatch(setRestaurants(restaurants));
-  };
+export function xxx() {
+  // TODO: delete this; temporal function to avoid lint error
 }

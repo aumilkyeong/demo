@@ -1,4 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import { useDispatch } from 'react-redux';
+
+import {
+  loadInitialData,
+} from './actions';
 
 // 0: 지역, 분류 얻기
 // 1: 지역 선택 <- Regions <- API (0)
@@ -18,6 +24,11 @@ function RestaurantsContainer() {
 }
 
 export default function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(loadInitialData());
+  });
+
   return (
     <div>
       <RegionsConatiner />
